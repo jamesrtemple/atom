@@ -1,0 +1,25 @@
+"*":
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+    useCustomTitleBar: true
+  editor:
+    fontFamily: "Menlo"
+    scrollPastEnd: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "c508df46-5c51-44cc-ba28-28f25cbd45ee"
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "seti-ui":
+    compactView: true
+    font: "Default Atom Font"
+    themeColor: "Steel"
+  welcome:
+    showOnStartup: false

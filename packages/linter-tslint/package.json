@@ -1,0 +1,120 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/m_/ptrcr5g548d707y3pypsskf00000gn/T/d-117221-2904-wf19g6/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/m_/ptrcr5g548d707y3pypsskf00000gn/T/d-117221-2904-wf19g6/package.tgz",
+        "spec": "/private/var/folders/m_/ptrcr5g548d707y3pypsskf00000gn/T/d-117221-2904-wf19g6/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/m_/ptrcr5g548d707y3pypsskf00000gn/T/apm-install-dir-117221-2904-1aztbza"
+    ]
+  ],
+  "_from": "../d-117221-2904-wf19g6/package.tgz",
+  "_id": "linter-tslint@0.15.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/linter-tslint",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/m_/ptrcr5g548d707y3pypsskf00000gn/T/d-117221-2904-wf19g6/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/m_/ptrcr5g548d707y3pypsskf00000gn/T/d-117221-2904-wf19g6/package.tgz",
+    "spec": "/private/var/folders/m_/ptrcr5g548d707y3pypsskf00000gn/T/d-117221-2904-wf19g6/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117221-2904-wf19g6/package.tgz",
+  "_shasum": "61e24e3922ef238e839b786fa458a34616d69559",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/m_/ptrcr5g548d707y3pypsskf00000gn/T/d-117221-2904-wf19g6/package.tgz",
+  "_where": "/private/var/folders/m_/ptrcr5g548d707y3pypsskf00000gn/T/apm-install-dir-117221-2904-1aztbza",
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-tslint/issues"
+  },
+  "configSchema": {
+    "rulesDirectory": {
+      "type": "string",
+      "title": "Custom rules directory (absolute path)",
+      "default": ""
+    },
+    "useLocalTslint": {
+      "type": "boolean",
+      "title": "Try using the local tslint package (if exist)",
+      "default": true
+    }
+  },
+  "dependencies": {
+    "atom-package-deps": "^4.3.1",
+    "loophole": "^1.1.0",
+    "resolve": "^1.2.0",
+    "tslint": "4.5.1",
+    "typescript": "2.2.1"
+  },
+  "description": "Linter plugin for Typescript, using tslint",
+  "devDependencies": {
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb-base": "^11.1.1",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "dist": {
+    "shasum": "ef99bad67e3e7db0dc69d8d379272ef02f4a4a21"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "global-require": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "atom"
+          ]
+        }
+      ]
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "globals": {
+      "atom": true
+    }
+  },
+  "homepage": "https://github.com/AtomLinter/linter-tslint",
+  "license": "MIT",
+  "main": "./lib/main.js",
+  "name": "linter-tslint",
+  "optionalDependencies": {},
+  "package-deps": [
+    "linter"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "readme": "linter-tslint\n==============\n[![Build Status](https://travis-ci.org/AtomLinter/linter-tslint.svg?branch=master)](https://travis-ci.org/AtomLinter/linter-tslint)\n\nThis linter plugin for AtomLinter provides an interface to [tslint](https://github.com/palantir/tslint). It will be used with files that have the \"TypeScript\" or \"TypeScriptReact\" syntax.\n\n## Installation\nOn first activation the plugin will install all dependencies automatically, you no longer have to worry about installing Linter.\n\n### Plugin installation\n```\n$ apm install linter-tslint\n```\n\n## Settings\nYou can configure linter-tslint by editing `~/.atom/config.cson` (choose Config... in Atom menu):\n```coffee\n'linter-tslint':\n  # Custom rules directory (absolute path)\n  rulesDirectory: \"/path/to/rules\"\n  # Try using the local tslint package (if exist)\n  useLocalTslint: true\n```\n\n## Contributing\nIf you would like to contribute enhancements or fixes, please do the following:\n\n1. Fork the plugin repository.\n1. Hack on a separate topic branch created from the latest `master`.\n1. Commit and push the topic branch.\n1. Make a pull request.\n1. welcome to the club\n\nPlease note that modifications should follow these coding guidelines:\n\n- Indent is 2 spaces.\n- Code should pass coffeelint linter.\n- Vertical whitespace helps readability, don’t be afraid to use it.\n\nThank you for helping out!\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomLinter/linter-tslint.git"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "apm test"
+  },
+  "version": "0.15.0"
+}
